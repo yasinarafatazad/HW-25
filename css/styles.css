@@ -1,0 +1,77 @@
+/* Common Css Start */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+.container{
+    width: 70%;
+    max-width: 930px;
+    margin: 0 auto;
+}
+/* Common Css Stop */
+/* =============| Start |============ */
+
+
+.col button{
+    border: none;
+    /* border-radius: 5px; */
+    background: transparent;
+    padding: 10px 20px;
+    margin: 15px 0;
+    margin-right: 15px;
+    color: #f5ebeb;
+    text-transform: uppercase;
+    position: relative;
+}
+.col button::after{
+    /* border-radius: 5px; */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(240, 72, 5);
+    z-index: -1;
+}
+.col button::before{
+    /* border-radius: 5px; */
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(240, 72, 5);
+    z-index: -1;
+}
+/* .col button:hover .col button::after{
+    transform: rotateX(15deg);
+} */
+.col .text{
+    height: 500px;
+    margin-bottom: 20px;
+    /* position: relative; */
+    /* z-index: 1; */
+}
+.col .images{
+    border-radius: 20px 20px 0 0;
+
+}
+/* .col .text::before{
+    content: 'Yasin Arafat Ajafd';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0,0.5);
+    /* z-index: 10; */
